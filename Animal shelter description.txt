@@ -1,9 +1,9 @@
 I would like to have an app for managing a pet shop.
 On the main screen I want to have a list of animals and a button to add a new animal.
 Each list member should have a picutre of the animal and some details of the animal: name, age, breed.
-Also, I click on an element of the list I would like to open a new page on which I can see and modify the details
-of the animal and have a short description for it. Also, on this page I want to have a button to remove the animal 
-from the list when is bought.
+Also, when click on an element of the list I would like to open a new page on which I can see and modify the details
+of the animal. Moreover, I want to have a short description for it. Also, on this page I would like to have a button to remove the animal 
+from the list when it is sold.
 
 Entity:
 Animal:
@@ -15,13 +15,13 @@ Animal:
 	
 CRUD:
 	-> add/create: creates and adds a new Animal to the pet shop
-	-> delete:     deletes an Animal from the shop when it is bought
-	-> read:	   view the details of an Animal
-	-> update:	   updates some fields of an Animal
+	-> delete:     deletes an Animal from the shop when it is sold
+	-> read:	   view the list of Animals
+	-> update:	   update some fields of an Animal
 	
 All the CRUD operations will be persisted on the local db and on the server.
 
-If the device is offline it would still be connected to the local db and, 
+If the device is offline, the app sould still be connected to the local db and, 
 after it is connected to the server again, the local db should sync with it.
 
 On update and delete - a message will be displayed, that the application is offline and the operation is not available. 
